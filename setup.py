@@ -1,0 +1,33 @@
+import day_rules
+import pyotp
+import robin_stocks as r
+# please run this file to set up
+print('Hello there, Welcome to Auto_Bot Trading - Python')
+print('This first step will take about 8 hours to set everything up for trading')
+print('I am your Trading Bot, I am using Robinhood Trading platform')
+print('To use Robinhood, Please register an account at https://robinhood.com/')
+print('Make sure to verify your phone number with robinhood, because I need it to enter the process!')
+print("Then enter your account and password")
+# login to robinhood account
+your_account = input('Enter Your Account here: ')
+your_password = input('Enter Your Password here: ')
+print('Wait for your OPT will send to your phone, then enter OTP below')
+login = r.login(your_account, your_password)
+totp = pyotp.TOTP("My2factorAppHere").now()
+print("Current OTP:", totp)
+print('Logged in, Well done, I will start setup everything you will need')
+print('Starting process...')
+day_rules.run_ticker_name()
+print('I have done around 5% of the process, thank you for waiting!')
+print('Preparing for Big_data!, this process will take about 5 hours, please wait!')
+print('You will see how hard I am working below!')
+day_rules.run_ticker_data()
+print('I have done around 70% of the process, thank you for waiting!')
+day_rules.run_3day_collector()
+print('I have done around 95% of the process, thank you for waiting!')
+print('We almost finish, hold on!')
+day_rules.run_RSI_data_collector()
+day_rules.run_3day_analizyer()
+print('Finished Analyzing Data')
+print('Make sure you enter your account name and password in robinbot.py')
+print('Now you can close this file and open Auto_run.py')

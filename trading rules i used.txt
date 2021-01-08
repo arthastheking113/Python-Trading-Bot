@@ -1,0 +1,26 @@
+these are trading rule i used in this trading bot
+
+#bullish candlestick 
+
+	hammer
+	inverse_hammer
+	bullish_engulfing
+	piercing_line
+	morning_star
+	three_white_soilders
+	three_line_strike_bullish
+
+#bearish candlestick
+
+	hanging_man
+	shooting_star
+	bearish_engulfing
+	evening_star
+	three_black_crows
+	dark_cloud_cover
+	three_line_strike_bearish
+	
+#RSI
+#50 days moving average
+#200 days moving average
+#golden and death cross

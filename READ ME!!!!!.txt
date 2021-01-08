@@ -1,0 +1,50 @@
+-----------------------INSTRUCTION---------------------------------------
+This is a Python Trading Bot using Robinhood. IF you don't have your
+robinhood account, please register at https://robinhood.com/
+and make sure you verify your phone number because Bot need it to log into
+your account.
+
+Now is the instruction:
+
+OPEN setup.py
+now, open your terminal in your IDE, or you can run command prompt or CMD
+type or copy these line by line, each time you enter a line, 
+press enter on your keyboard and wait for it to run. 
+These are things you need to run this bot. Without it, you can't run this bot.
+
+pip install pandas
+pip install io
+pip install requests
+pip install requests_html
+pip install yahoo_fin
+pip install yahoo_fin --upgrade
+pip install robin_stocks
+pip install pytz
+pip install holidays
+pip install matplotlib
+
+
+
+RUN setup.py, and follow its instruction, you will see what is it doing on the screen
+SAVE setup.py, then CLOSE it.
+
+***notes: if there is an error popup, just close the program IDE then reopen it
+***run: 'pip install numpy==1.19.3' in your terminal (without the quotes)
+
+
+then, EDIT your robinhood account and password in robinbot.py, DO NOT run it, DO NOT run bobinbot.py
+
+just put your account and password in robinbot.py, save, and close it.
+
+then, OPEN auto_run.py and RUN it. Now you are good to go, bot will take care everything for you.
+---------------------------------------continues below
+------Recommend--------
+# I recommend you should have around 100.000USD in robinhood acount before starting using this bot
+# if you don't have that much money or you don't want to lose your money,
+# open robinbot.py and find line 82 or # changing quantity depend on the latest price of stock
+# delete the if elif statement from line 82 to 130
+# or from '# changing quantity depend on the latest price of stock' to '# Buying stock if we have money'
+# This will make the quantity of all your buying stock at 1.
+
+# I have no responsibility for the lost of your money when using this trading bot
+# when writing this bot, I'm at very young age, and don't have much knowledge in finance and programming.
